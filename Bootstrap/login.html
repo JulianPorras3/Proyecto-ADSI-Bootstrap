@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Bootstrap/css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/realeases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="img/jpg" href="../Bootstrap/img/logo.png">
+    <title>Bienvenidos !</title>
+  </head>
+  <body>
+      <!--Header-->
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark text-navbar sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../Bootstrap/img/logo.png" alt="SIGFIMI">
+            Proyecto SIGFIMI
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../Bootstrap/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Bootstrap/Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Bootstrap/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-sigfimi" href="#" data-toggle="modal" data-target="#Modalcontacto">Contactenos</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../Bootstrap/login.html">Iniciar Sesión</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+      </div>
+      </nav>
+      <!--/Header-->
+      
+      <!--Main-->
+      <div class="body1 mt-3 mb-6 pt-4">
+                <div class="container" id="container">
+                  <div class="form-container sign-up-container">
+                    <form action="#">
+                      <h1 id="h12">Crear Cuenta</h1>
+                      <div class="social-container">
+                        <a id="a" href="https://www.facebook.com/joglosmy.scs" class="social" ><i class="fab fa-facebook-f"><img src="../Bootstrap/img/face.jpg" height="100%" width="100%"></i></a>
+                        <a id="a" href="http://joglosmyscs.com.co" class="social"><i class="fab fa-google-plus-g"><img src="../Bootstrap/img/google.svg" height="100%" width="100%"></i></a>
+                        <a id="a" href="https://www.linkedin.com/in/julian-andres-porras-beltran-3687bb1a6/" class="social"><i class="fab fa-linkedin-in"><img src="../Bootstrap/img/link.jpg" height="100%" width="100%"></i></a>
+                      </div>
+                      <span id="span">Usa Un Correo Electronico Para El Registro.</span>
+                      <input type="text" placeholder="Nombre" id="Nombre" />
+                      <input type="email" placeholder="Correo"  id="Correo1"/>
+                      <input type="password" placeholder="Contraseña" id="Contraseña1" />
+                      <button type="button" onclick='registro()'>Únete !</button>
+                    </form>
+                  </div>
+                  <div class="form-container sign-in-container">
+                    <form action="#">
+                      <h1 id="h12">Inicia Sesión</h1>
+                      <div class="social-container">
+                        <a id="a" href="https://www.facebook.com/joglosmy.scs" class="social" ><i class="fab fa-facebook-f"><img src="../Bootstrap/img/face.jpg" height="100%" width="100%"></i></a>
+                        <a id="a" href="http://joglosmyscs.com.co" class="social"><i class="fab fa-google-plus-g"><img src="../Bootstrap/img/google.svg" height="100%" width="100%"></i></a>
+                        <a id="a" href="https://www.linkedin.com/in/julian-andres-porras-beltran-3687bb1a6/" class="social"><i class="fab fa-linkedin-in"><img src="../Bootstrap/img/link.jpg" height="100%" width="100%"></i></a>
+                      </div>
+                      <span id="span">Usar Cuenta</span>
+                      <input type="email" placeholder="Correo" id="Correo" />
+                      <input type="password" placeholder="Contraseña"  id="Contraseña"/>
+                      <a href="#" class="mb-2">Olvidó Su Contraseña ?</a>
+                      <button type="button" onclick="validar()" value="Enviar">Iniciar Sesión</button>
+                    </form>
+                  </div>
+                  <div class="overlay-container">
+                    <div class="overlay">
+                      <div class="overlay-panel overlay-left">
+                        <h1 id="h12">Bienvenido!</h1>
+                        <p id="p">Mantengase Conectado Con Nosotros, Inicia Sesión Con Tu Información !</p>
+                        <button class="ghost" id="signIn">Iniciar Sesión</button>
+                      </div>
+                      <div class="overlay-panel overlay-right">
+                        <h1>Hola, Amigo !</h1>
+                        <p id="p">Ingrese Sus Datos Y Haga Parte De Nosotros. </p>
+                        <button class="ghost" id="signUp">Únete !</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+       </div>
+
+      <!--/Main-->
+    <!--Footer-->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-lg">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#">Ubicación</a>
+                </div>        
+                <div class="col-12 col-lg">
+                    <a href="#">Nuestros Clientes</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#"> Términos y Condiciones</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#"> Privacidad</a>
+                </div>
+                <div class="col-12 col-lg">
+                    <a href="#"> Productos</a>
+                </div>
+            </div>
+        </div>
+        <p>SIGFIMI, Copyright &copy; 2020</p>
+    </footer>
+    <!--/footer-->
+    <!--Modal-->
+    <div class="modal fade" id="Modalcontacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Contactenos !</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="from-row">
+                  <div class="from-group col ">
+                  <div class="col mb-3">
+                    <input type="text"  class="form-control" placeholder="Nombre">
+                  </div>
+                  <div class="col">
+                    <input type="email" class="form-control" placeholder="Correo">
+                  </div>
+                  </div>
+                </div>
+              </form>
+              <!--alerta-->
+              <div class="modal-body">
+                <form>
+                  <div class="from-row">
+                    <div class="from-group col ">
+                      <div class="alert alert-success" role="alert">
+                        Pronto nos pondremos en contacto contigo!.
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              <!--/alerta-->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-success">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--/Modal-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../Bootstrap/js/main.js"></script>
+    <script src="../Bootstrap/js/registrarse.js"></script>
+    <script src="../Bootstrap/js/login.js"></script>
+  </body>
+</html>

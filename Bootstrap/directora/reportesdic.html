@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="icon" type="img/jpg" href="../adm/img/logo.png">
+    <link rel="stylesheet" href="../adm/css/estilos.css">
+
+
+    <title>Directora</title>
+  </head>
+  <body>
+      <div class="d-flex">
+          <div id="sidebar-container" class="bg-primary">
+              <div class="logo">
+                  <h4 class="text-light font-weight-bold">SIGFIMI Directora Producción</h4>
+              </div>
+              <div class="menu">
+                  <a href="index.html" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i>Tablero</a>
+                  <a href="Procesos.html" class="d-block text-light p-3"><i class="icon ion-md-people mr-2 lead"></i>Usuario</a>
+                  <a href="reportesdic.html" class="d-block text-light p-3"><i class="icon ion-md-stats mr-2 lead"></i>Reportes</a>
+                  <a href="perfildic.html" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
+                  <a href="#" class="d-block text-light p-3"><i class="icon ion-md-settings mr-2 lead"></i>Configuración</a>
+            </div>
+          </div>
+          <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="form-inline position-relative my-2 d-inline-block">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-search position-absolute " type="submit"><i class="icon ion-md-search"></i></button>
+                      </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="../directora/img/mireya.png" class="img-fluid rounder-circle avatar mr-2">
+                              Mireya Gonzalez
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mi Perfil</a>
+                            <a class="dropdown-item" href="#">Suscripción</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../index.html">Cerrar Sesión</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </nav>
+              <div id="content">
+                  <section class="py-3">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-9">
+                                  <h1 class=" text-muted font-weight-bold mb-0">Tus Reportes</h1>
+                              </div>
+                              <div class="col-lg-3 d-flex">
+                                  <button class="btn btn-primary w-100 align-self-center">Descargar Reporte</button>
+                              </div>
+                          </div>
+                 </section>
+                          <section class="bg-grey">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 my-3">
+                                        <div class="card rounder-0">
+                                            <div class="card-header bg-light">
+                                                <h6 class="font-weight-bold mb-0">Producciones</h6>
+                                            </div>
+                                            <div class="card-body">
+                                              <canvas id="myChart"></canvas>
+                                            </div>
+      
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 my-3">
+                                        <div class="card rounder-0">
+                                            <div class="card-header bg-light">
+                                                <h6 class="font-weight-bold mb-0">Producto Final</h6>
+                                            </div>
+                                            <div class="card-body pt-2">
+                                                <div class="d-flex border-bottom py-2">
+                                                    <div class="mr-3">
+                                                      <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="d-inline-block text-muted mb-0">2.000</h6><span class=" badge badge-warning ml-2">Lote: 3260</span>
+                                                        <small class="d-block text-muted">Racor ak 570</small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">845</h6><span class=" badge badge-warning ml-2">Lote: 3259</span>
+                                                      <small class="d-block text-muted">Tapa Sup 8970</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">2200</h6><span class=" badge badge-warning ml-2">Lote: 3258</span>
+                                                      <small class="d-block text-muted">Vaso Gasolina</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">2200</h6><span class=" badge badge-warning ml-2">Lote: 3257</span>
+                                                      <small class="d-block text-muted">Tapa filtro gasolina</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2 mb-3">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">360</h6><span class=" badge badge-warning ml-2">Lote: 3256</span>
+                                                      <small class="d-block text-muted">Tapa Kenwork</small>
+                                                  </div>
+                                              </div>
+                                              <button class="btn btn-primary w-100">Ver Todas</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 my-3">
+                                        <div class="card rounder-0">
+                                            <div class="card-header bg-light">
+                                                <h6 class="font-weight-bold mb-0">Inventario</h6>
+                                            </div>
+                                            <div class="card-body">
+                                              <canvas id="myChart2"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 my-3">
+                                        <div class="card rounder-0">
+                                            <div class="card-header bg-light">
+                                                <h6 class="font-weight-bold mb-0">Registros</h6>
+                                            </div>
+                                            <div class="card-body pt-2">
+                                                <div class="d-flex border-bottom py-2">
+                                                    <div class="mr-3">
+                                                      <h4 class="mb-0"><i class="icon ion-md-cloud"></i></h4>
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="d-inline-block text-muted mb-0">1795</h6><span class=" badge badge-warning ml-2">Jazmin</span>
+                                                        <small class="d-block text-muted">2020-07-31</small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cloud"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">2200</h6><span class=" badge badge-warning ml-2">Jazmin</span>
+                                                      <small class="d-block text-muted">2020-07-23</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cloud"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">850</h6><span class=" badge badge-warning ml-2">Jazmin</span>
+                                                      <small class="d-block text-muted">2020-06-24</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cloud"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">500</h6><span class=" badge badge-warning ml-2">Jazmin</span>
+                                                      <small class="d-block text-muted">2020-06-03</small>
+                                                  </div>
+                                              </div>
+                                              <div class="d-flex border-bottom py-2 mb-3">
+                                                  <div class="mr-3">
+                                                    <h4 class="mb-0"><i class="icon ion-md-cloud"></i></h4>
+                                                  </div>
+                                                  <div>
+                                                      <h6 class="d-inline-block text-muted mb-0">1650</h6><span class=" badge badge-warning ml-2">Jazmin</span>
+                                                      <small class="d-block text-muted">2020-04-30</small>
+                                                  </div>
+                                              </div>
+                                              <button class="btn btn-primary w-100">Ver Todas</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+             
+                 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="../Bootstrap/js/registrarse.js"></script>
+    <script src="../Bootstrap/js/login.js"></script>
+    <script>var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+        
+            // The data for our dataset
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
+                datasets: [{
+                    label: 'Cantidad Producciones',
+                    backgroundColor: '#C7D80A',
+                    borderColor: 'rgba(0, 0, 0, 0.22)',
+                    maxBarThickness: 40,
+                    data: [80, 35, 52, 50, 45, 22, 65]
+                }]
+            },
+        
+            // Configuration options go here
+            options: {}
+        });</script>
+        <script>var ctx = document.getElementById('myChart2').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+            
+                // The data for our dataset
+                data: {
+                    datasets: [{
+                        label: 'Numero De Entradas',
+                        backgroundColor: '#13BAD0',
+                        borderColor: 'rgba(0, 0, 0, 0.22)',
+                        maxBarThickness: 40,
+                        data: [2000, 1115, 1650, 500, 850, 2200, 1795]
+                }, {
+                    label: 'Numero De Salidas',
+                    backgroundColor: '#161515',
+                    borderColor: 'rgba(0, 0, 0, 0.22)',
+                    data: [1000, 750, 800, 125, 300, 1500, 1450],
+                type: 'line',
+                }],
+
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
+
+                },
+                
+            
+                // Configuration options go here
+                options: {}
+            });
+                </script>
+            
+
+  </body>
+</html>

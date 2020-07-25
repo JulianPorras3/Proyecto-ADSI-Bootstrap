@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../adm/css/estilos.css">
+    <link rel="icon" type="img/jpg" href="../adm/img/logo.png">
+    <title>Cliente</title>
+  </head>
+  <body>
+      <div class="d-flex">
+          <div id="sidebar-container" class="bg-primary">
+              <div class="logo">
+                  <h4 class="text-light font-weight-bold">SIGFIMI Cliente</h4>
+              </div>
+              <div class="menu">
+                  <a href="index.html" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i>Tablero</a>
+                  <a href="orden.html" class="d-block text-light p-3"><i class="icon ion-md-document mr-2 lead"></i>Ordenes de Compra</a>
+                  <a href="reportesclien.html" class="d-block text-light p-3"><i class="icon ion-md-stats mr-2 lead"></i>Reportes</a>
+                  <a href="perfilclien.html" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
+                  <a href="#" class="d-block text-light p-3"><i class="icon ion-md-settings mr-2 lead"></i>Configuración</a>
+            </div>
+          </div>
+          <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="form-inline position-relative my-2 d-inline-block">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-search position-absolute " type="submit"><i class="icon ion-md-search"></i></button>
+                      </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="../adm/img/xd.jpg" class="img-fluid rounder-circle avatar mr-2">
+                              Julián Porras
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mi Perfil</a>
+                            <a class="dropdown-item" href="#">Suscripción</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../index.html">Cerrar Sesión</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </nav>
+              <div id="content">
+                  <section class="py-3">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-9">
+                                  <h1 class=" text-muted font-weight-bold mb-0">Tus Ordenes</h1>
+                              </div>
+                              <div class="col-lg-3 d-flex">
+                                  <button class="btn btn-primary w-100 align-self-center">Nueva Orden</button>
+                              </div>
+                          </div>
+                              <div class="row mb-3">
+                                  <div class="col-xl-7 col-lg-12">
+                                      <div class="table-responsive">
+                                          <table class="table">
+                                              <thead>
+                                                  <tr>
+                                                      <th colspan="2"><small class="font-weight-blod ">Orden</small></th>
+                                                      <th><small class="font-weight-blod">Estado</small></th>
+                                                      <th><small class="font-weight-blod">Configuración</small></th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr class="shadow-sm">
+                                                      <td><img src="../cliente/img/orden.jpg" class="img-fluid avatar rounded-circle"></td>
+                                                      <td><span class="d-block">Joglosmy</span> <small>Nº 1558</small></td>
+                                                      <td class="align-middle"><span class="badge badge-warning">Proceso</span></td>
+                                                      <td class="align-middle"><span class="badge badge-secondary">Editar <i class="icon ion-md-settings ml-2"></i></span></td>
+                                                  </tr>
+                                                  <tr class="shadow-sm">
+                                                    <td><img src="../cliente/img/orden.jpg" class="img-fluid avatar rounded-circle"></td>
+                                                    <td><span class="d-block"> Joglosmy</span> <small>Nº 1559</small></td>
+                                                    <td class="align-middle"><span class="badge badge-warning">Proceso</span></td>
+                                                    <td class="align-middle"><span class="badge badge-secondary">Editar <i class="icon ion-md-settings ml-2"></i></span></td>
+                                                </tr>
+                                                <tr class="shadow-sm">
+                                                    <td><img src="../cliente/img/orden.jpg" class="img-fluid avatar rounded-circle"></td>
+                                                    <td><span class="d-block">Joglosmy</span> <small>Nº 1560</small></td>
+                                                    <td class="align-middle"><span class="badge badge-danger">No Recibida</span></td>
+                                                    <td class="align-middle"><span class="badge badge-secondary">Editar <i class="icon ion-md-settings ml-2"></i></span></td>
+                                                </tr>
+                                                <tr class="shadow-sm">
+                                                    <td><img src="../cliente/img/orden.jpg" class="img-fluid avatar rounded-circle"></td>
+                                                    <td><span class="d-block">Joglosmy</span> <small>Nº 1561</small></td>
+                                                    <td class="align-middle"><span class="badge badge-success">Recibida</span></td>
+                                                    <td class="align-middle"><span class="badge badge-secondary">Editar <i class="icon ion-md-settings ml-2"></i></span></td>
+                                                </tr>
+                                                <tr class="shadow-sm">
+                                                    <td><img src="../cliente/img/orden.jpg" class="img-fluid avatar rounded-circle"></td>
+                                                    <td><span class="d-block">Joglosmy</span> <small>Nº1562</small></td>
+                                                    <td class="align-middle"><span class="badge badge-secondary">Desconocido</span></td>
+                                                    <td class="align-middle"><span class="badge badge-secondary">Editar <i class="icon ion-md-settings ml-2"></i></span></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                      </div>
+                                  </div>
+                                <div class="col-xl-5 col-lg-12">
+                                    <div class="card mb-5 shadow-sm shadow-hover border-0">
+                                        <div class="card-header bg-light border-0 pt-3 pb-0">
+                                            <h6 class="mb-0">Mensajes</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="d-flex border-bottom py-3">
+                                                <div class="mr-3">
+                                                    <img src="../cliente/img/logo.png" class="img-fluid avatar rounded-circle">
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex">
+                                                        <p class="mb-0">Joglosmy</p>
+                                                        <small class="text-muted ml-auto ">Hace 2 Horas</small>
+                                                    </div>
+                                                    <small class="text-muted">Hemos recibido tu orden.</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex border-bottom py-3">
+                                                <div class="mr-3">
+                                                    <img src="../cliente/img/logo.png" class="img-fluid avatar rounded-circle">
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex">
+                                                        <p class="mb-0">Joglosmy</p>
+                                                        <small class="text-muted ml-auto ">Hace 5 Horas</small>
+                                                    </div>
+                                                    <small class="text-muted">Tienes Ordenes pedientes ?.</small>
+                                                </div>
+                                            </div>
+                                            <div class="text-center pt-3">
+                                                <a href=""><small>Ver todos los mensajes</small></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+              </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="../Bootstrap/js/registrarse.js"></script>
+    <script src="../Bootstrap/js/login.js"></script>
+  </body>
+</html>

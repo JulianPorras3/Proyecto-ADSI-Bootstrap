@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="icon" type="img/jpg" href="../adm/img/logo.png">
+    <link rel="stylesheet" href="../adm/css/estilos.css">
+    <title>Cliente</title>
+  </head>
+  <body>
+      <div class="d-flex">
+          <div id="sidebar-container" class="bg-primary">
+              <div class="logo">
+                  <h4 class="text-light font-weight-bold">SIGFIMI Cliente</h4>
+              </div>
+              <div class="menu">
+                  <a href="../cliente/index.html" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i>Tablero</a>
+                  <a href="../cliente/orden.html" class="d-block text-light p-3"><i class="icon ion-md-document mr-2 lead"></i>Ordenes de Compra</a>
+                  <a href="../cliente/reportesclien.html" class="d-block text-light p-3"><i class="icon ion-md-stats mr-2 lead"></i>Reportes</a>
+                  <a href="../cliente/perfilclien.html" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
+                  <a href="#" class="d-block text-light p-3"><i class="icon ion-md-settings mr-2 lead"></i>Configuración</a>
+            </div>
+          </div>
+
+          <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="form-inline position-relative my-2 d-inline-block">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-search position-absolute " type="submit"><i class="icon ion-md-search"></i></button>
+                      </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="../cliente/img/logo_partmo.png" class="img-fluid rounder-circle avatar mr-2">
+                              Cliente
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mi Perfil</a>
+                            <a class="dropdown-item" href="#">Suscripción</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../index.html">Cerrar Sesión</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+              </nav>
+              <div id="content">
+                  <section class="py-3">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-9">
+                                  <h1 class=" text-muted font-weight-bold mb-0">Bienvenido Cliente</h1>
+                                  <p class="lead text-muted">¿Que quieres hacer hoy?</p>
+                              </div>
+                              <div class="col-lg-3 d-flex">
+                                  <button class="btn btn-primary w-100 align-self-center">Descargar Reporte</button>
+
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+                  <section class="bg-mix">
+                      <div class="container">
+                          <div class="card rounder-0">
+                              <div class="card-body">
+                                  <div class="row">
+                                      <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                                          <div class="mx-auto">
+                                              <h6 class="text-muted">Ordenes Generadas</h6>
+                                              <h3 class="font-weight-bold">520</h3>
+                                              <h6 class="text-muted"><i class="icon ion-md-arrow-dropup-circle"></i>10.09%</h6>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                                          <div class="mx-auto">
+                                              <h6 class="text-muted">Pedidos Recibidos</h6>
+                                              <h3 class="font-weight-bold">365</h3>
+                                              <h6 class="text-muted"><i class="icon ion-md-arrow-dropup-circle"></i>19.10%</h6>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-6 d-flex stat my-3">
+                                          <div class="mx-auto">
+                                              <h6 class="text-muted">Pedidos Pendientes</h6>
+                                              <h3 class="font-weight-bold">155  </h3>
+                                              <h6 class="text-muted"><i class="icon ion-md-arrow-dropup-circle"></i>75.25%</h6>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-6 d-flex my-3">
+                                          <div class="mx-auto">
+                                              <h6 class="text-muted">Número De Tapas</h6>
+                                              <h3 class="font-weight-bold">5.265</h3>
+                                              <h6 class="text-muted"><i class="icon ion-md-arrow-dropup-circle"></i>10.70%</h6>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+                  <section class="bg-grey">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-lg-8 my-3">
+                                  <div class="card rounder-0">
+                                      <div class="card-header bg-light">
+                                          <h6 class="font-weight-bold mb-0">Cantidad De Ordenes</h6>
+                                      </div>
+                                      <div class="card-body">
+                                        <canvas id="myChart"></canvas>
+                                      </div>
+
+                                  </div>
+                                  
+                              </div>
+                              <div class="col-lg-4 my-3">
+                                  <div class="card rounder-0">
+                                      <div class="card-header bg-light">
+                                          <h6 class="font-weight-bold mb-0">Pedidos</h6>
+                                      </div>
+                                      <div class="card-body pt-2">
+                                          <div class="d-flex border-bottom py-2">
+                                              <div class="mr-3">
+                                                <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                              </div>
+                                              <div>
+                                                  <h6 class="d-inline-block text-muted mb-0">Racor ak 5070</h6><span class=" badge badge-warning ml-2">5.000</span>
+                                                  <small class="d-block text-muted">  </small>
+                                              </div>
+                                          </div>
+                                          <div class="d-flex border-bottom py-2">
+                                            <div class="mr-3">
+                                              <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                            </div>
+                                            <div>
+                                                <h6 class="d-inline-block text-muted mb-0">Racor AS 1441</h6><span class=" badge badge-warning ml-2">2.000</span>
+                                                <small class="d-block text-muted"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex border-bottom py-2">
+                                            <div class="mr-3">
+                                              <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                            </div>
+                                            <div>
+                                                <h6 class="d-inline-block text-muted mb-0">Tapa Sup 8970</h6><span class=" badge badge-warning ml-2">500</span>
+                                                <small class="d-block text-muted"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex border-bottom py-2">
+                                            <div class="mr-3">
+                                              <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                            </div>
+                                            <div>
+                                                <h6 class="d-inline-block text-muted mb-0">Vaso Gasolina</h6><span class=" badge badge-warning ml-2">3.500</span>
+                                                <small class="d-block text-muted"></small>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex border-bottom py-2 mb-3">
+                                            <div class="mr-3">
+                                              <h4 class="mb-0"><i class="icon ion-md-cube"></i></h4>
+                                            </div>
+                                            <div>
+                                                <h6 class="d-inline-block text-muted mb-0">Racor 4050</h6><span class=" badge badge-warning ml-2">250</span>
+                                                <small class="d-block text-muted"></small>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary w-100">Ver Todos</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </section>
+              </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="../Bootstrap/js/registrarse.js"></script>
+    <script src="../Bootstrap/js/login.js"></script>
+    <script>var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+        
+            // The data for our dataset
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
+                datasets: [{
+                    label: 'Ordenes Generadas',
+                    backgroundColor: '#58D3F7',
+                    borderColor: 'rgba(0, 0, 0, 0.22)',
+                    maxBarThickness: 40,
+                    data: [74, 50, 94, 52, 85, 79, 81]
+                }]
+            },
+        
+            // Configuration options go here
+            options: {}
+        });</script>
+
+        <main>
+            <iframe name="ordenes" src="orden.html"></iframe>
+            <iframe name="reportes" src="reportesclien.html"></iframe>
+            <iframe name="perfil" src="perfilclien.html"></iframe>
+        </main>
+  </body>
+</html>
